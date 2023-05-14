@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Registration - Summary</title>
-    <link rel="stylesheet" href="styles.css">
-    <h1>Registration Summary</h1>
-  </head>
-  <body class="Information">
-    <div class = "form-summary">
-      
-      <div class="summary" id="name">Name: </div>
-      <br>
-      <div class="summary" id="email">Email: </div>
-      <br>
-      <div class="summary" id="birthday">Birthdate: </div>
-      <br>
-      <div class="summary-address" id="address">Address: </div>
-      <div class="summary-img" id="image"><img src="" alt=""></div>
-      <div class="summary" id="hobbies">Hobbies: </div>
-      <br>
-      <div class="summary-button">
-        <button onclick="localStorageManager.newRegistration()">Reset</button>
-      </div>
-      
+
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Registration - Page 02</title>
+</head>
+
+<body class="Address">
+  <div>
+    <h1>Your Health</h1>
+  </div>
+  <div class="form">
+    <div class="radioBtnQuestionsOnHealthPage">
+        <div>
+            <label>Are you a happy person:</label>
+                <div><label for="yesHappy"><input type="radio" id="yesHappy" name="happyOrNot" 
+                    value="happy">yes</label></div>
+                <div><label for="notHappy"><input type="radio" id="notHappy" name="happyOrNot" 
+                    value="not happy">no</label></div>  
+        </div>
+        <br>
+        <div>
+            <label>Will you do skydiving:</label>
+                <div><label for="yesSkydiving"><input type="radio" id="yesSkydiving" name="skydivingOrNot"
+                    value="skydiving">yes</label></div>
+                <div> <label for="noSkydiving"><input type="radio" id="noSkydiving" name="skydivingOrNot"
+                    value="not skydiving">no</label></div>
+                <div> <label for="maybeSkydiving"><input type="radio" id="maybeSkydiving" name="skydivingOrNot"
+                    value="maybe skydiving">maybe</label></div> 
+        </div>
+        <br>
+        <div>
+            <label>Do you have $1 in your pocket now:</label>
+            <div><label for="haveMoney"><input type="radio" id="haveMoney" name="happyOrNot" 
+                value="have money">yes</label></div>
+            <div> <label for="haveNoMoney"><input type="radio" id="haveNoMoney" name="happyOrNot" 
+                value="have no money">no</label></div>
+        </div>
     </div>
-  </body>
+    <div class="buttons">
+        <br>
+      <button id="previousbutton" step="4" onclick=" backButton()">Previous</button>
+      <button id="nextbutton" step="4" onclick="nextButtons()">Next</button>
+    </div>
+  </div>
+</body>
+
+  <script src="validationsPage2.js"></script> 
   <script src="classes.js"></script>
   <script src="localstorage.js"></script>
   <script src="inputmanager.js"></script>
-  <script src="displaymanager.js"></script>
+  
   <script src="pageredirection.js"></script>
+  <script src="buttons.js"></script>
 </html>
