@@ -24,6 +24,8 @@ function nextButtonNavigate(stepNumber) {
         pageManager.redirect(`page${neededPageNumber}.html`)
     } else if (stepNumber === 3 && validationsPageThree() == true)  {
         pageManager.redirect(`page${neededPageNumber}.html`)
+    } else if (stepNumber === 4) {
+        pageManager.redirect(`page${neededPageNumber}.html`) 
     } else {
         alert("Please fill in all required field")
     }    
