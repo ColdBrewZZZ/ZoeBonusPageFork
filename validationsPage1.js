@@ -16,12 +16,7 @@ function validationsPageOne() {
 function validateName() {
   let name = document.querySelector("#name").value;
   let myArray = name.split(" ");
-  if (
-    !myArray[0] ||
-    myArray[1] == undefined ||
-    myArray[0].length < 2 ||
-    myArray[1].length < 2
-  ) {
+  if (!myArray[0] || myArray[1] == undefined || myArray[0].length < 2 || myArray[1].length < 2) {
     document.querySelector("#nameValidation").textContent = star;
     return false;
   } else {
