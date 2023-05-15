@@ -23,6 +23,7 @@ class LocalStorageManager{
 
   newRegistration(){
     this.clear()
+    localStorage.clear();
     pageManager.redirect('page1.html')
   }
 
