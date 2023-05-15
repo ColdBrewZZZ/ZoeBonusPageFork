@@ -1,4 +1,4 @@
-function validationsPage4(){
+function validationsPageFour(){
     if (validateHappyQuestion() && validateSkydivingQuestion() && validateMoneyQuestion()) {
       return true;
     } else {
