@@ -1,10 +1,11 @@
 function validationsPageFour(){
     if (validateHappyQuestion() && validateSkydivingQuestion() && validateMoneyQuestion()) {
-      return true;
+        saveHealthAnswersToLocalStorage();
+        return true;
     } else {
-      validateSkydivingQuestion()
-      validateMoneyQuestion()
-      return false;
+        validateSkydivingQuestion()
+        validateMoneyQuestion()
+        return false;
     }
   }
 
